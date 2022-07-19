@@ -1,0 +1,11 @@
+<launch>
+
+    <group ns="$(arg veh)">
+
+        <node pkg="localization" type="getmap_dt_publisher.py" name="map" output="screen"/>
+        <!-- <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 1 map odom 10" /> -->
+        <node pkg="localization" type="localize.py" name="localizer" output="screen"/>
+
+    </group>
+
+</launch>

@@ -1,14 +1,14 @@
 # parameters
-ARG REPO_NAME="<REPO_NAME_HERE>"
-ARG DESCRIPTION="<DESCRIPTION_HERE>"
-ARG MAINTAINER="<YOUR_FULL_NAME> (<YOUR_EMAIL_ADDRESS>)"
+ARG REPO_NAME="wt_from_camera"
+ARG DESCRIPTION="Get localization directly reading the camera"
+ARG MAINTAINER="Giulio Vaccari (giulio.vaccari@mail.polimi.it)"
 # pick an icon from: https://fontawesome.com/v4.7.0/icons/
 ARG ICON="cube"
 
 # ==================================================>
 # ==> Do not change the code below this line
 ARG ARCH=arm64v8
-ARG DISTRO=ente
+ARG DISTRO=daffy
 ARG BASE_TAG=${DISTRO}-${ARCH}
 ARG BASE_IMAGE=dt-ros-commons
 ARG LAUNCHER=default
